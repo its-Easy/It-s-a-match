@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatty</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href='tel:+91-807-788-2109' id="call"><img src="login.jfif" style="height: 50px; width: 50px;padding: 5px;"></a>
+          <a class="navbar-brand" href="#" id="topname1">chat feature</a>
+        </div>
+    </nav>
+    <div class="mainbody" style="display: flex;">
+
+
+<!--this will show the contacts-->
+
+    <div class="card my-3 contactcontainer" style="width: 15rem;margin: auto;height: 28rem;overflow-y: scroll;flex-basis: 25%;position: relative;">
+
+
+  
+    </div>
+
+
+<!--this will show the messages-->
+<div class="rightside" style="flex-basis: 80%;position:relative;">
+    <div class="card my-3 bigcontainer" style="width: 50rem;margin: auto;height: 28rem;overflow-y: scroll;position: relative;display: block;" id="bigcontainer">
+        <!-- <div class="message left">jatin: hello there!</div>
+        <div class="message right">jatin1: hi ,how are you?</div>
+        <div class="message left">jatin: hello there!</div>
+        <div class="message right">jatin1: hi ,how are you?</div>
+        <div class="message left">jatin: hello there!</div>
+        <div class="message right">jatin1: hi ,how are you?</div>
+        <div class="message left">jatin: hello there!</div>
+        <div class="message right">jatin1: hi ,how are you?</div>
+ -->      
+    </div>
+
+<!--this will send the messages-->
+    <div class="card my-2 bigsendcontainer" style="width: 50rem;margin: auto;height: 7rem;">
+        <div class="card-body">
+        <form action="#" id="sendcontainer">
+          <input type="text" style="width: 40rem;height: 5rem;" id="messageinp" placeholder="enter your message here">
+          <button class="btn btn-primary" style="margin-left: 50px;" type="submit">Send</button>
+        </form>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

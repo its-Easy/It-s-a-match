@@ -1,0 +1,38 @@
+.message{
+    background-color: grey;
+    width: 40%;
+    padding: 1%;
+    margin:17px 12px;
+    border-radius: 10px;
+
+}
+.left{
+    float: left;
+    clear: both;
+
+}
+.right{
+    float: right;
+    clear: both;
+
+}
+.center{
+    margin: auto;
+    text-align: center;
+    clear: both;
+}
+.contact{
+    height: 10px;
+
+}
+.topname{
+    background-color: skyblue;
+    width: 100%;
+    padding: 1%;
+    color: aliceblue;
+    text-align: left;
+    clear: both;
+
+
+
+}
