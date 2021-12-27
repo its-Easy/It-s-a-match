@@ -9,10 +9,18 @@ router.route('/').post((req, res) => {
     const userPassword = md5sum.update(req.body.password).digest('hex')
 
     user.findOne({email: userName}, {password: 1}).
-       then(storedPassword => {
-           if(userPassword==storedPassword.password) res.json("true")
+       then(result => {
+           if(userPassword==result.password) res.json(result)
            else res.json("false")
        })
+})
+router.route('/verify-token/').post((req, res) => {
+    const token=req.body.token
+    user.findOne({_id: token}).
+        then(result => {
+            res.json(result)
+        }).
+        catch(err=>res.json(err))
 })
 
 module.exports = router
